@@ -9,18 +9,22 @@ This README is intended to help get you started. Definitely update and improve t
 1. Install node.js and npm [here](https://nodejs.org/en/download/package-manager/)
 
 2. Install hubot-enterprise:
+
    `sudo npm install -g yo eedevops/generator-hubot-enterprise hubot-config-generator hubot-runner`
 
 3. Create a new directory (do **NOT** name it **hubot** and do not user **hubot-** prefix)
 
 4. In the new directory, run the hubot-enterprise generator (do not run as ROOT user):
+
    `yo hubot-enterprise`
+
    (NOTE: in case of `EACCES: permission denied` run: `npm cache clean` and the run the above command again)
 
 5. Follow the setup wizard
 
 6. Run the following command:
-   `hcg --add https://github.com/HPSoftware/hubot-srl.git`
+
+    `hcg --add https://github.com/HPSoftware/hubot-srl.git`
 
 7. Fill in the following environment variables:
     ```
@@ -34,6 +38,7 @@ This README is intended to help get you started. Definitely update and improve t
     ```
 
 8. Run the following command:
+
    `hr`
 
 Now the StormRunner Load integration is integrated with your Slack instance
@@ -45,30 +50,31 @@ user1>> srl list projects
 
 ## Help
 You can use the Hubot Enterprise help commands by typing:
+
 ` @yourbot help srl`
 
 ## Available commands
 
 ##### Lists all projects in the supplied tenant:
-    `srl list projects`
+    srl list projects
 
 ##### Sets the project to Project Name or ID
-    `srl set project to Default Project or 123`
+    srl set project to Default Project or 123
 
 ##### Lists all the tests for previously set project name or ID
-    `srl list tests`
+    srl list tests
 
 ##### Displays the latest run information for supplied test ID
-    `srl get latest run for test 1234`
+    srl get latest run for test 1234
 
 ##### Displays run information for up to 10 runs for supplied test ID in set project
-    `srl get runs for test 1234`
+    srl get runs for test 1234
 
 ##### Displays the run information for x number of runs for supplied test ID in set project
-    `srl get status for last 6 runs for test 1234`
+    srl get status for last 6 runs for test 1234
 
 ##### Displays results information for supplied run ID
-    `srl get results for run 2314`
+    srl get results for run 2314
 
 ##### Executes supplied test ID in respective project
-    `srl run test 1234`
+    srl run test 1234
