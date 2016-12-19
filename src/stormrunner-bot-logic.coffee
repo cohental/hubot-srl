@@ -32,7 +32,7 @@ See the License for the specific language governing permissions and limitations 
 ###
 
 # Configuration:
-# HUBOT_SLACK_TOKEN "" Slack toekn for hubot
+# HUBOT_SLACK_TOKEN "" Slack token for hubot
 # https_proxy "" Proxy used for hubot
 # SRL_SAAS_PREFIX "https://stormrunner-load.saas.hpe.com/v1" SaaS Rest API URL
 # SRL_USERNAME "" Username to StormRunner Load
