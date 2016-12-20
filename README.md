@@ -57,10 +57,12 @@ user1>> srl list projects
 ## Help
 You can use the Hubot Enterprise help commands by typing:
 
-` @yourbot help srl list`
-` @yourbot help srl get`
-` @yourbot help srl set`
-` @yourbot help srl run`
+```
+@yourbot help srl list
+@yourbot help srl get
+@yourbot help srl set
+@yourbot help srl run
+```
 
 ## Available commands
 
