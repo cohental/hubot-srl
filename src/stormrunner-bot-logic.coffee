@@ -46,6 +46,7 @@ See the License for the specific language governing permissions and limitations 
 Helpers         = require './helpers'
 StormrunnerApi  = require "./libs/stormrunnerApiAdapter.js"
 mockData        = require "./mockData"
+util            = require('util')
 
 module.exports = (robot) ->
   Helpers.setRobot(robot)
@@ -955,9 +956,14 @@ module.exports = (robot) ->
 
         # Send the built message to the chat client/room.
 
+        # Send URL to runs page of specified test
+
+        strURL = ""
+        strURL = util.format('https://stormrunner-load.saas.hpe.com/loadTests/%s/runs/?TENANTID=%s&projectId=%s', strTestId, process.env.SRL_TENANT_ID, intProject)
+
         msgData = {
           channel: msg.message.room
-          text: "Your test is initializing and the Run ID is #{runs.runId}. Would you like a side of fries with that?"
+          text: "Your test is initializing and the Run ID is #{runs.runId}. Would you like a side of fries with that? \n #{strURL}"
           attachments: attachments
         }
 

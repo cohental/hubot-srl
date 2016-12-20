@@ -22,9 +22,13 @@ This README is intended to help get you started. Definitely update and improve t
 
 5. Follow the setup wizard
 
+   (NOTE: when asked for Bot Integrations, leave it blank)
+
 6. Run the following command:
 
     `hcg --add https://github.com/HPSoftware/hubot-srl.git`
+
+   (Note: This will add hubot-srl script to your current hubot instance dependencies)
 
 7. Fill in the following environment variables:
     ```
@@ -41,6 +45,8 @@ This README is intended to help get you started. Definitely update and improve t
 
    `hr`
 
+   (Note: This will launch the hubot instance and keep the hubot process alive. In case of failure, the process will automatically restart)
+
 Now the StormRunner Load integration is integrated with your Slack instance
 
 ## Sample Interaction
@@ -51,7 +57,10 @@ user1>> srl list projects
 ## Help
 You can use the Hubot Enterprise help commands by typing:
 
-` @yourbot help srl`
+` @yourbot help srl list`
+` @yourbot help srl get`
+` @yourbot help srl set`
+` @yourbot help srl run`
 
 ## Available commands
 
