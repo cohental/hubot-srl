@@ -8,9 +8,9 @@ This README is intended to help get you started. Definitely update and improve t
 
 1. Install node.js and npm [here](https://nodejs.org/en/download/package-manager/)
 
-2. Install hubot-enterprise:
+2. Install coffeeScript and hubot-enterprise:
 
-   `sudo npm install -g yo eedevops/generator-hubot-enterprise hubot-config-generator hubot-runner`
+   `sudo npm install -g coffee-script yo eedevops/generator-hubot-enterprise hubot-config-generator hubot-runner`
 
 3. Create a new directory (do **NOT** name it **hubot** and do not user **hubot-** prefix)
 
