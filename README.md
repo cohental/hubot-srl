@@ -26,7 +26,7 @@ This README is intended to help get you started. Definitely update and improve t
 
 6. Run the following command:
 
-    `hcg --add https://github.com/HPSoftware/hubot-srl.git`
+    `hcg --add https://github.com/HPSoftware/hubot-srl`
 
    (Note: This will add hubot-srl script to your current hubot instance dependencies)
 
