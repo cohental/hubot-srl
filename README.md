@@ -12,7 +12,7 @@ This README is intended to help get you started. Definitely update and improve t
 
    `sudo npm install -g coffee-script yo eedevops/generator-hubot-enterprise hubot-config-generator hubot-runner`
 
-3. Create a new directory (do **NOT** name it **hubot** and do not user **hubot-** prefix)
+3. Create a new directory (do **NOT** name it **hubot** and do not use **hubot-** prefix)
 
 4. In the new directory, run the hubot-enterprise generator (do not run as ROOT user):
 
